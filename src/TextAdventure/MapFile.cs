@@ -133,7 +133,7 @@ namespace TextAdventure
                 // Item in unsere interne level laden verwaltung hinzufügen
                 DecoItemDic.Add(item.GetId(), item);
                 // wenn Id Größer ist als alle vorherigen, merken
-                if (item.GetId()> LastKey)
+                if (item.GetId() > LastKey)
                 {
                     LastKey = item.GetId();
                 }
@@ -210,7 +210,7 @@ namespace TextAdventure
                 AddRoom(new Room(Int32.Parse(id), name, preposition, description));
             }
             reader.Close();
-            
+
         }
 
         /* läd alle Türen aus Datenbank
@@ -233,7 +233,7 @@ namespace TextAdventure
                 String secretStr = reader[4].ToString();
                 String room1FkStr = reader[5].ToString();
                 String room2FkStr = reader[6].ToString();
-                
+
                 // wenn Räume angeben wurden
                 if (room1FkStr != "" && room2FkStr != "")
                 {
@@ -343,7 +343,7 @@ namespace TextAdventure
                 AddDecoItem(newItem);
             }
             reader.Close();
-            
+
         }
 
     }

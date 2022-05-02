@@ -28,10 +28,10 @@ namespace TextAdventure
                 return (ItemList[index]);
             }
 
-            Console.WriteLine("Dieses Item " + index + " gibt es nicht");
+            //Console.WriteLine("Dieses Item " + index + " gibt es nicht");
             return null;
         }
-        
+
         // gibt die Anzahl aller Items zurück
         public int GetSize()
         {
@@ -52,7 +52,6 @@ namespace TextAdventure
                         ItemList.Add(item);
                         Size++;
                     }
-                    // ToDo: else mit Fehlermeldung
                 }
                 // DecoItems können beliebig oft in der Liste sein
                 else
@@ -116,7 +115,7 @@ namespace TextAdventure
             }
             return text;
         }
-        
+
         // Ausgabe aller Items nummeriert und untereinander
         public string Print()
         {
