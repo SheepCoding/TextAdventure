@@ -7,13 +7,13 @@ CREATE TABLE Room (
   Id INT AUTO_INCREMENT PRIMARY KEY,
   Name VARCHAR(50),
   Preposition VARCHAR(10),
-  Description VARCHAR(100)
+  Description VARCHAR(200)
 );
 
 CREATE TABLE Door (
   Id INT AUTO_INCREMENT PRIMARY KEY,
   Name VARCHAR (50),
-  OpenText VARCHAR (100),
+  OpenText VARCHAR (200),
   Open INT,
   Secret INT,
   Room1Id_FK INT,
@@ -25,9 +25,9 @@ CREATE TABLE Door (
 CREATE TABLE LootItem (
   Id INT AUTO_INCREMENT PRIMARY KEY,
   Name VARCHAR (50),
-  Description VARCHAR(100),
-  InteractText VARCHAR(100),
-  PackText VARCHAR(100),
+  Description VARCHAR(200),
+  InteractText VARCHAR(200),
+  PackText VARCHAR(200),
   Open INT,
   Secret INT,
   Fix INT,
@@ -38,9 +38,9 @@ CREATE TABLE LootItem (
 CREATE TABLE DecoItem (
   Id INT AUTO_INCREMENT PRIMARY KEY,
   Name VARCHAR (50),
-  Description VARCHAR(100),
-  InteractText VARCHAR(100),
-  PackText VARCHAR(100),
+  Description VARCHAR(200),
+  InteractText VARCHAR(200),
+  PackText VARCHAR(200),
   MaxNumber INT
   );
 
@@ -123,10 +123,10 @@ VALUES
 	("altes Gemälde", "Ein Gemälde von einer schönen Dame", "Du schaust dir das Bild genauer an. Kannst aber keine Hinweise erkennen, die dir helfen, hier heraus zukommen.", "Das Bild ist fest an der Wand. Du bekommst es nicht ab.", 3),
 	("altes Gemälde", "Ein Gemälde von einer Ritter", "Du schaust dir das Bild genauer an. Kannst aber keine Hinweise erkennen, die dir helfen, hier heraus zukommen.", "Das Bild ist fest an der Wand. Du bekommst es nicht ab.", 3),
 	("altes Gemälde", "Ein unkenntliches Gemälde", "Du schaust dir das Bild genauer an, kannst aber nichts erkennen.", "Das Bild ist fest an der Wand. Du bekommst es nicht ab.", 5),
-	("altes Tisch", "Ein alter Tisch mit wackelden Beinen.", "Die legst deinen Rucksack kurz auf dem Tisch ab.", "Was willst du mit einem Tisch? Er ist zu groß für deinen Rucksack.", 1),
+	("alter Tisch", "Ein alter Tisch mit wackelden Beinen.", "Die legst deinen Rucksack kurz auf dem Tisch ab.", "Was willst du mit einem Tisch? Er ist zu groß für deinen Rucksack.", 1),
 	("Scherben", "viele kleine und große Scherben", "Du kannst nicht erkennen, was es einmal war.", "Da du nicht zum Putzen hier bist, lässt du die Scherben liegen.", 5),
-	("altes Vase", "Eine alte Vase mit vielen Rissen.", "Du hast keine Blumen und die Vase hat auch ein Loch und ist damit unbrauchbar.", "Sie ist unbrauchbar. Du lässt sie stehen.",5),
-	("altes Tepich", "Er ist alt und häßlich.", "Du hebst ihn hoch, aber außer Staub ist nichts darunter.", "Du brauchst ihn nicht und lässt ihn liegen.", 1),
+	("alte Vase", "Eine alte Vase mit vielen Rissen.", "Du hast keine Blumen und die Vase hat auch ein Loch und ist damit unbrauchbar.", "Sie ist unbrauchbar. Du lässt sie stehen.",5),
+	("alter Tepich", "Er ist alt und häßlich.", "Du hebst ihn hoch, aber außer Staub ist nichts darunter.", "Du brauchst ihn nicht und lässt ihn liegen.", 1),
 	("dunkle Flecken", "Man kann nicht erkennen, von was die Flecken ursprünglich stammen.", "Da du nicht zum Putzen hier bist, lässt du die Flecken Flecken sein.", "Das ist unmöglich.", 5),
     ("ein altes Buch", "Man kann den Titel nicht entziffern.", "Du schaust ins Buch, doch die Seiten sind unleserlich geworden.", "Du brauchst kein Müll einpacken.", 5)
     ;
