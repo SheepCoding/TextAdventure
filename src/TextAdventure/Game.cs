@@ -21,11 +21,13 @@ namespace TextAdventure
             // Command Pattern: Invoker, Kommandos anlegen
             CommandDic = new Dictionary<string, AbstractCommand>();
             CommandDic.Add("go", new CommandGoAction(MyPlayer));
-            CommandDic.Add("take", new CommandTakeAction(MyPlayer));
             CommandDic.Add("search", new CommandSearchAction(MyPlayer));
             CommandDic.Add("interact", new CommandInteractAction(MyPlayer));
+            CommandDic.Add("take", new CommandTakeAction(MyPlayer));
             CommandDic.Add("drop", new CommandDropAction(MyPlayer));
+            CommandDic.Add("use", new CommandUseAction(MyPlayer));
             CommandDic.Add("exit", new CommandExitAction(MyPlayer));
+
         }
 
         public Player GetPlayer()
