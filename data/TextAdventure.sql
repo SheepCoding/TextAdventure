@@ -22,6 +22,11 @@ CREATE TABLE Door (
   FOREIGN KEY (Room2Id_FK) REFERENCES Room (Id)
 );
 
+CREATE TABLE ItemTyp (
+  Id INT AUTO_INCREMENT PRIMARY KEY,
+  Name VARCHAR (20)
+);
+
 CREATE TABLE LootItem (
   Id INT AUTO_INCREMENT PRIMARY KEY,
   Name VARCHAR (50),
@@ -32,7 +37,10 @@ CREATE TABLE LootItem (
   Secret INT,
   Fix INT,
   RoomId_FK INT,
-  FOREIGN KEY (RoomId_FK) REFERENCES Room (Id)
+  ItemTyp_FK INT,
+  FOREIGN KEY (RoomId_FK) REFERENCES Room (Id),
+  FOREIGN KEY (ItemTyp_FK) REFERENCES ItemTyp (Id)
+  
 );
 
 CREATE TABLE DecoItem (
@@ -43,6 +51,7 @@ CREATE TABLE DecoItem (
   PackText VARCHAR(200),
   MaxNumber INT
   );
+
 
 INSERT INTO Room
   (Name, Preposition, Description)
@@ -82,39 +91,48 @@ VALUES
   ("ein alter Kleiderschrank", "Die Hinterwand des Schrankes fehlt. Dort befindet sich ein dunkler langer Gang.", 1, 1, 4, 5),
   ("eine Falltür", "Unter der Falltür siehst du ein schwarzes Loch. An der Seite kannst du eine schmale Leiter entdecken.", 1, 1, NULL, NULL)
   ;
-  
-INSERT INTO LootItem
-	(Name, Description, InteractText, PackText, Open, Secret, Fix, RoomId_FK)
+
+INSERT INTO ItemTyp
+	(Name)
 VALUES
-	("ein großer Schlüssel", "Er ist groß, alt und goldend.", "Du brachst erst ein Schloss, um ihn zu benutzen.", "Bestimmt brauchst du den Schlüssel noch. Du packst ihn ein.", 1, 1, 0, 5),
-	("ein kleiner Schlüssel", "Er ist klein und goldend.", "Du brachst erst ein Schloss, um ihn zu benutzen.", "Bestimmt brauchst du den Schlüssel noch. Du packst ihn ein.", 1, 1, 0, 5),
-	("ein kleiner Schlüssel", "Er ist klein und silbern.", "Du brachst erst ein Schloss, um ihn zu benutzen.", "Bestimmt brauchst du den Schlüssel noch. Du packst ihn ein.", 1, 1, 0, 8),
-	("ein alter Schlüssel", "Er ist alt und silbern.", "Du brachst erst ein Schloss, um ihn zu benutzen.", "Bestimmt brauchst du den Schlüssel noch. Du packst ihn ein.", 1, 1, 0, 9),
-	("ein altes Schwert", "Es ist kaputt.", "Mit einem kaputten Schwert kann man nichts machen.", "Was willst du mit dem kapputem Schwert. Nach kurzem überlegen, legst du es zurück.", 1, 1, 1, 8),
-	("ein altes Schwert", "Es ist ein reines Dekoschwert mit stumpfer Klinge.", "Du schwingst das Schwert etwas ungeschickt durch die Luft.", "Du packst es ein. Vielleicht kannst du es verkaufen, wenn du es jemals hier heraus kommst.", 1, 1, 0, 6),
-	("ein altes Schwert", "Es ist alt, aber man kann es benutzen.", "Du schwingst das Schwert etwas ungeschickt durch die Luft.", "Du packst es ein. Vielleicht kannst du dich damit verteidigen.", 1, 1, 0, 1),
-	("eine alte Tasche", "Sie sieht ziemlich alt und runtergekommen aus.", "Du schaust in die Tasche. Sie ist leer.", "Du packst sie ein, obwohl du keine Idee hast, wozu du sie brachen könntest.", 1, 1, 0, 2),
-    ("eine kleine Münze", "Sie ist klein und goldend.", "Du schaust, wie es mit deinem Glück steht. Bei Zahl kommst du hier heraus, bei Kopf nicht. Du wirfst die Münze ... Kopf", "Du packst sie ein. Man kann nie genug Geld haben.", 1, 1, 0, 5),
-    ("eine große Truhe", "Sie sieht ziemlich groß und schwer aus.", "Du öffnest sie und schaust hinein.", "Du versuchst sie hoch zu heben. Dein Rücken merkt an, dass das eine deiner schlechteren Ideen war.", 0, 1, 1, 4),
-    ("eine große Truhe", "Sie sieht ziemlich groß und schwer aus.", "Du öffnest sie und schaust hinein.", "Du versuchst sie hoch zu heben. Dein Rücken merkt an, dass das eine deiner schlechteren Ideen war.", 0, 1, 1, 5),
-    ("eine große Truhe", "Sie sieht ziemlich groß und schwer aus.", "Du öffnest sie und schaust hinein.", "Du versuchst sie hoch zu heben. Dein Rücken merkt an, dass das eine deiner schlechteren Ideen war.", 0, 1, 1, 7),
-    ("eine große Truhe", "Sie sieht ziemlich groß und schwer aus.", "Du öffnest sie und schaust hinein.", "Du versuchst sie hoch zu heben. Dein Rücken merkt an, dass das eine deiner schlechteren Ideen war.", 0, 1, 1, 11),
-    ("ein großer Kleiderschrank", "Er ist groß und alt.",  "Du öffnest sie und schaust hinein.", "Sie ist zu groß für dein Rucksack.", 0, 1, 1, 5),
-    ("ein alter Schrank", "Ein normaler Schrank.",  "Du öffnest sie und schaust hinein.", "Da du kein Möbelpacker bist, läßt du ihn stehen.", 0, 1, 1, 2),
-    ("ein alter Schrank", "Seine Tür ist kaputt.",  "Du öffnest sie und schaust hinein.", "Da du kein Möbelpacker bist, läßt du ihn stehen.", 1, 1, 1, 12),
-    ("ein großer Schrank", "Er ist groß und alt.",  "Du öffnest sie und schaust hinein.", "Da du kein Möbelpacker bist, läßt du ihn stehen.", 0, 1, 1, 7),
-    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1, 1, 1, 1),
-    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, 5),
-    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, 5),
-    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, 1),
-    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, 10),
-    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, 10),
-    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, 10),
-    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, 10),
-    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, 10),
-    ("ein Stuhl", "Ein kaputter Stuhl.", "Du setzt dich auf den Stuhl und fällst mit dem Stuhl auf dem Boden. Der Stuhl war KAPUTT, Genie.", "Was willst du mit einem Stuhl, der außerdem kaputt ist?", 1, 1, 1, 10),
-    ("ein Bett", "Er ist ein großes Himmelbett.", "Du legst dich kurz hin und springst gleich wieder auf. Aus der Matratze kommen lauter Ratten, die soford wieder im Dunklen verschwinden.", "Nein.", 1, 1, 1, 5),
-    ("ein altes Buch", "Es handelt sich um einen Liebesroman.", "Du ließt ein paar Seiten, bis dir einfällt, dass du hier nicht zum Lesen bist.", "Du packst es ein. Vielleicht hast du später Zeit zum Lesen." , 1, 1, 1, 5)
+	("key"),
+	("weapon"),
+	("money"),
+	("book")
+    ;
+ 
+INSERT INTO LootItem
+	(Name, Description, InteractText, PackText, Open, Secret, Fix, ItemTyp_FK, RoomId_FK)
+VALUES
+	("ein großer Schlüssel", "Er ist groß, alt und goldend.", "Du brachst erst ein Schloss, um ihn zu benutzen.", "Bestimmt brauchst du den Schlüssel noch. Du packst ihn ein.", 1, 1, 0, 1, 5),
+	("ein kleiner Schlüssel", "Er ist klein und goldend.", "Du brachst erst ein Schloss, um ihn zu benutzen.", "Bestimmt brauchst du den Schlüssel noch. Du packst ihn ein.", 1, 1, 0, 1, 5),
+	("ein kleiner Schlüssel", "Er ist klein und silbern.", "Du brachst erst ein Schloss, um ihn zu benutzen.", "Bestimmt brauchst du den Schlüssel noch. Du packst ihn ein.", 1, 1, 0, 1, 8),
+	("ein alter Schlüssel", "Er ist alt und silbern.", "Du brachst erst ein Schloss, um ihn zu benutzen.", "Bestimmt brauchst du den Schlüssel noch. Du packst ihn ein.", 1, 1, 0, 1, 9),
+	("ein altes Schwert", "Es ist kaputt.", "Mit einem kaputten Schwert kann man nichts machen.", "Was willst du mit dem kapputem Schwert. Nach kurzem überlegen, legst du es zurück.", 1, 1, 1, 2, 8),
+	("ein altes Schwert", "Es ist ein reines Dekoschwert mit stumpfer Klinge.", "Du schwingst das Schwert etwas ungeschickt durch die Luft.", "Du packst es ein. Vielleicht kannst du es verkaufen, wenn du es jemals hier heraus kommst.", 1, 1, 0, 2, 6),
+	("ein altes Schwert", "Es ist alt, aber man kann es benutzen.", "Du schwingst das Schwert etwas ungeschickt durch die Luft.", "Du packst es ein. Vielleicht kannst du dich damit verteidigen.", 1, 1, 0, 2, 1),
+	("eine alte Tasche", "Sie sieht ziemlich alt und runtergekommen aus.", "Du schaust in die Tasche. Sie ist leer.", "Du packst sie ein, obwohl du keine Idee hast, wozu du sie brachen könntest.", 1, 1, 0, NULL, 2),
+    ("eine kleine Münze", "Sie ist klein und goldend.", "Du schaust, wie es mit deinem Glück steht. Bei Zahl kommst du hier heraus, bei Kopf nicht. Du wirfst die Münze ... Kopf", "Du packst sie ein. Man kann nie genug Geld haben.", 1, 1, 0, 3, 5),
+    ("eine große Truhe", "Sie sieht ziemlich groß und schwer aus.", "Du öffnest sie und schaust hinein.", "Du versuchst sie hoch zu heben. Dein Rücken merkt an, dass das eine deiner schlechteren Ideen war.", 0, 1, 1, NULL, 4),
+    ("eine große Truhe", "Sie sieht ziemlich groß und schwer aus.", "Du öffnest sie und schaust hinein.", "Du versuchst sie hoch zu heben. Dein Rücken merkt an, dass das eine deiner schlechteren Ideen war.", 0, 1, 1, NULL, 5),
+    ("eine große Truhe", "Sie sieht ziemlich groß und schwer aus.", "Du öffnest sie und schaust hinein.", "Du versuchst sie hoch zu heben. Dein Rücken merkt an, dass das eine deiner schlechteren Ideen war.", 0, 1, 1, NULL, 7),
+    ("eine große Truhe", "Sie sieht ziemlich groß und schwer aus.", "Du öffnest sie und schaust hinein.", "Du versuchst sie hoch zu heben. Dein Rücken merkt an, dass das eine deiner schlechteren Ideen war.", 0, 1, 1, NULL, 11),
+    ("ein großer Kleiderschrank", "Er ist groß und alt.",  "Du öffnest sie und schaust hinein.", "Sie ist zu groß für dein Rucksack.", 0, 1, 1, NULL, 5),
+    ("ein alter Schrank", "Ein normaler Schrank.",  "Du öffnest sie und schaust hinein.", "Da du kein Möbelpacker bist, läßt du ihn stehen.", 0, 1, 1, NULL, 2),
+    ("ein alter Schrank", "Seine Tür ist kaputt.",  "Du öffnest sie und schaust hinein.", "Da du kein Möbelpacker bist, läßt du ihn stehen.", 1, 1, 1, NULL, 12),
+    ("ein großer Schrank", "Er ist groß und alt.",  "Du öffnest sie und schaust hinein.", "Da du kein Möbelpacker bist, läßt du ihn stehen.", 0, 1, 1, NULL, 7),
+    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1, 1, 1, NULL, 1),
+    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, NULL, 5),
+    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, NULL, 5),
+    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, NULL, 1),
+    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, NULL, 10),
+    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, NULL, 10),
+    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, NULL, 10),
+    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, NULL, 10),
+    ("ein Stuhl", "Ein normaler Stuhl.", "Du setzt dich kurz auf den Stuhl und ruhst dich aus.", "Was willst du mit einem Stuhl? Er ist zu groß für deinen Rucksack.", 1,1, 1, NULL, 10),
+    ("ein Stuhl", "Ein kaputter Stuhl.", "Du setzt dich auf den Stuhl und fällst mit dem Stuhl auf dem Boden. Der Stuhl war KAPUTT, Genie.", "Was willst du mit einem Stuhl, der außerdem kaputt ist?", 1, 1, 1, NULL, 10),
+    ("ein Bett", "Er ist ein großes Himmelbett.", "Du legst dich kurz hin und springst gleich wieder auf. Aus der Matratze kommen lauter Ratten, die soford wieder im Dunklen verschwinden.", "Nein.", 1, 1, 1, NULL, 5),
+    ("ein altes Buch", "Es handelt sich um einen Liebesroman.", "Du ließt ein paar Seiten, bis dir einfällt, dass du hier nicht zum Lesen bist.", "Du packst es ein. Vielleicht hast du später Zeit zum Lesen." , 1, 1, 1, 4, 5)
     ;
     
 INSERT INTO DecoItem

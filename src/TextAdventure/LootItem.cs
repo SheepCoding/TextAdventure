@@ -10,18 +10,26 @@ namespace TextAdventure
     {
         private Room MyRoom;
 
-        public LootItem(int id, string name, string description, string interactText, string packText, bool open, bool secret, bool fix, Room room): base(id, name, description, interactText, packText)
+        private string Typ;
+
+        public LootItem(int id, string name, string description, string interactText, string packText, bool open, bool secret, bool fix, Room room, string typ): base(id, name, description, interactText, packText)
         {
             MaxNumber = 1;
             Open = open;
             Secret = secret;
             Fix = fix;
             MyRoom = room;
+            Typ = typ;
         }
 
         public Room GetRoom()
         {
             return MyRoom;
+        }
+
+        public string GetTyp()
+        {
+            return Typ;
         }
     }
 }

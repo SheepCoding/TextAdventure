@@ -16,6 +16,7 @@ namespace TextAdventure
         private Dictionary<int, Door> DoorDic;
         private Dictionary<int, LootItem> LootItemDic;
         private Dictionary<int, DecoItem> DecoItemDic;
+        private List<string> ItemTypList;
 
         public MapFile()
         {
@@ -23,6 +24,7 @@ namespace TextAdventure
             DoorDic = new Dictionary<int, Door>();
             LootItemDic = new Dictionary<int, LootItem>();
             DecoItemDic = new Dictionary<int, DecoItem>();
+            ItemTypList = new List<string>();
         }
 
         /* Mit der Datenbank verbinden und alles laden
@@ -264,8 +266,26 @@ namespace TextAdventure
             reader.Close();
         }
 
-        /* läd alle LootItems aus Datenbank
+        /* läd alle möglichen Itemtypen aus Datenbank
          */
+        private void LoadItemTyp(MySqlConnection connection)
+        {
+            // Sql Befehl losschicken
+            string sql = "SELECT * FROM ItemTyp";
+            MySqlCommand command = new MySqlCommand(sql, connection);
+
+            // Daten holen
+            MySqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                // ItemTyp(int id, string name)
+                ItemTypList.Add(reader[1].ToString());
+            }
+            reader.Close();
+        }
+
+        /* läd alle LootItems aus Datenbank
+        */
         private void LoadLootItem(MySqlConnection connection)
         {
             // Sql Befehl losschicken
@@ -276,7 +296,7 @@ namespace TextAdventure
             MySqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                //Item(int id, string name, string description, bool secret, bool fix, Room room)
+                //Item(int id, string name, string description, bool secret, bool fix, string typ, Room room)
                 String idStr = reader[0].ToString();
                 String name = reader[1].ToString();
                 String description = reader[2].ToString();
@@ -285,7 +305,8 @@ namespace TextAdventure
                 String openStr = reader[5].ToString();
                 String secretStr = reader[6].ToString();
                 String fixStr = reader[7].ToString();
-                String roomFkStr = reader[8].ToString();
+                String typFkStr = reader[8].ToString();
+                String roomFkStr = reader[9].ToString();
 
                 // wenn Raume angeben wurden
                 if (roomFkStr != "")
@@ -310,8 +331,16 @@ namespace TextAdventure
                     {
                         fix = true;
                     }
+                    // passenden Itemtyp aus Liste auslesen
+                    // wenn NULL, dann leeren String als Typ
+                    string typ = "";
+                    if (typFkStr != "")
+                    {
+                        typ = ItemTypList[int.Parse(typFkStr) - 1];
+                    }
+ 
                     // neues Item erzeugen und hinzufügen
-                    LootItem newItem = new LootItem(Int32.Parse(idStr), name, description, interactText, packText, open, secret, fix, room);
+                    LootItem newItem = new LootItem(Int32.Parse(idStr), name, description, interactText, packText, open, secret, fix, room, typ);
                     AddLootItem(newItem);
                 }
             }
