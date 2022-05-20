@@ -42,6 +42,7 @@ namespace TextAdventure
 
                 this.LoadRoom(connection);
                 this.LoadDoor(connection);
+                this.LoadItemTyp(connection);
                 this.LoadLootItem(connection);
                 this.LoadDecoItem(connection);
 
@@ -284,6 +285,7 @@ namespace TextAdventure
             reader.Close();
         }
 
+        //ToDo: Fehler beim Items laden
         /* läd alle LootItems aus Datenbank
         */
         private void LoadLootItem(MySqlConnection connection)
@@ -305,8 +307,8 @@ namespace TextAdventure
                 String openStr = reader[5].ToString();
                 String secretStr = reader[6].ToString();
                 String fixStr = reader[7].ToString();
-                String typFkStr = reader[8].ToString();
-                String roomFkStr = reader[9].ToString();
+                String roomFkStr = reader[8].ToString();
+                String typFkStr = reader[9].ToString();
 
                 // wenn Raume angeben wurden
                 if (roomFkStr != "")
@@ -334,9 +336,10 @@ namespace TextAdventure
                     // passenden Itemtyp aus Liste auslesen
                     // wenn NULL, dann leeren String als Typ
                     string typ = "";
-                    if (typFkStr != "")
+                    int typId;
+                    if (int.TryParse(typFkStr, out typId))
                     {
-                        typ = ItemTypList[int.Parse(typFkStr) - 1];
+                        typ = ItemTypList[typId - 1];
                     }
  
                     // neues Item erzeugen und hinzufügen

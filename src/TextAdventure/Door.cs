@@ -59,6 +59,11 @@ namespace TextAdventure
         {
             Secret = secret;
         }
+        
+        public void SetOpen(bool open)
+        {
+            Open = open;
+        }
 
         public bool IsOpen()
         {

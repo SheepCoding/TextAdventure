@@ -24,7 +24,7 @@ namespace TextAdventure
             // neues Spiel erzeugen mit geladenen Level
             Game myGame = new Game(myLevel, player);
 
-            Console.WriteLine(" Versuche zu entkommen.");
+            Console.WriteLine("\n\n\n Versuche zu entkommen.");
             // Ersten Raum ausgeben
             Console.WriteLine(player.GetCurrentRoom().Print());
             Console.WriteLine(myGame.GetActionSelection());

@@ -10,8 +10,6 @@ namespace TextAdventure
     {
         private Room MyRoom;
 
-        private string Typ;
-
         public LootItem(int id, string name, string description, string interactText, string packText, bool open, bool secret, bool fix, Room room, string typ): base(id, name, description, interactText, packText)
         {
             MaxNumber = 1;
@@ -27,9 +25,5 @@ namespace TextAdventure
             return MyRoom;
         }
 
-        public string GetTyp()
-        {
-            return Typ;
-        }
     }
 }

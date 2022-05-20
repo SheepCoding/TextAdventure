@@ -76,7 +76,7 @@ INSERT INTO Door
   (Name, OpenText, Open, Secret, Room1Id_FK, Room2Id_FK)
 VALUES
   ("eine einfache Holztür", "Die Tür öffnet sich quietschend.", 1, 0, 1, 12),
-  ("eine viel benutzte Holztür", "Die Tür öffnet sich erstaunlich leicht.", 1, 0, 1, 2),
+  ("eine viel benutzte Holztür", "Die Tür öffnet sich erstaunlich leicht.", 0, 0, 11, 2),
   ("eine unscheinbare Holztür", "Die Tür öffnet sich knarrend.", 1, 0, 2, 10),
   ("eine alte, dreckige Holztür", "Die Tür öffnet sich knarrend und quietschend.", 1, 0, 2, 8),
   ("eine alte Holztür", "Die Tür öffnet sich quietschend. Hinter ihr befindet sich eine schmale Wendeltreppe.", 1, 0, 12, 7),
@@ -85,11 +85,11 @@ VALUES
   ("eine Stahltür", "Die Tür öffnet sich quietschend.", 1, 0, 12, 3),
   ("eine mit Blumen verzierte Holztür", "Die Tür öffnet sich erstaunlich leicht.", 1, 0, 12, 9),
   ("eine verzierte Doppeltür aus Holz", "Die Tür öffnet sich nur schwer.", 1, 0, 12, 10),
-  ("eine verzierte Holztür", "Die Tür öffnet sich erstaunlich leicht.", 1, 0, NULL, NULL),
+  ("eine verzierte Holztür", "Die Tür öffnet sich erstaunlich leicht.", 0, 0, 12, 5),
   ("eine Gittertür", "Die Tür öffnet sich quietschend. Dahinter befindt sich ein langer Gang mit einem kleinen Lichtfleck am Ende.", 0, 1, 3, 13),
   ("ein Gemälde von einem Ritter auf einem prächtigen Pferd", "Das gemälde lässt sich zur Seite drehen. Dahinter befindet sich ein dunkler nierieger Gang.", 1, 1, 4, 6),
   ("ein alter Kleiderschrank", "Die Hinterwand des Schrankes fehlt. Dort befindet sich ein dunkler langer Gang.", 1, 1, 4, 5),
-  ("eine Falltür", "Unter der Falltür siehst du ein schwarzes Loch. An der Seite kannst du eine schmale Leiter entdecken.", 1, 1, NULL, NULL)
+  ("eine Falltür", "Unter der Falltür siehst du ein schwarzes Loch. An der Seite kannst du eine schmale Leiter entdecken.", 0, 1, 7, 3)
   ;
 
 INSERT INTO ItemTyp
