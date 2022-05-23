@@ -108,7 +108,7 @@ namespace TextAdventure
         // Raum durchsuchen
         public string SearchAction()
         {
-            string text = " Du durchsuchst den Raum. ";
+            string text = " Du durchsuchst den Raum genauer. ";
             // findet zufällig bis zu 4 geheime Items und/oder Türen
             text += CurrentRoom.Search(RandomClass.Next(1, 5));
             return text;

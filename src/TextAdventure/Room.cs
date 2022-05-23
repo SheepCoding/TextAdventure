@@ -160,9 +160,9 @@ namespace TextAdventure
             // wenn nichts neus gefunden wurde
             if (number == 0)
             {
-                return "Du hast nichts neues gefunden.";
+                return "nichts neues.";
             }
-            return text;
+            return text + ".";
         }
 
         // zeigt die Beschreibung des Raumes und alle Namen von den nicht geheimen Türen und Items
