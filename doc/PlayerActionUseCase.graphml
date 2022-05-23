@@ -1,0 +1,2019 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created by yFiles for HTML 2.5-alpha4-->
+<graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml.html/2.0/ygraphml.xsd " xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:demostyle2="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/2.0" xmlns:demostyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/1.0" xmlns:icon-style="http://www.yworks.com/yed-live/icon-style/1.0" xmlns:bpmn="http://www.yworks.com/xml/yfiles-bpmn/2.0" xmlns:demotablestyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoTableStyle/1.0" xmlns:uml="http://www.yworks.com/yFilesHTML/demos/UMLDemoStyle/1.0" xmlns:GraphvizNodeStyle="http://www.yworks.com/yFilesHTML/graphviz-node-style/1.0" xmlns:VuejsNodeStyle="http://www.yworks.com/demos/yfiles-vuejs-node-style/1.0" xmlns:explorer-style="http://www.yworks.com/data-explorer/1.0" xmlns:y="http://www.yworks.com/xml/yfiles-common/3.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/3.0" xmlns:yjs="http://www.yworks.com/xml/yfiles-for-html/2.0/xaml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<key id="d0" for="node" attr.type="int" attr.name="zOrder" y:attr.uri="http://www.yworks.com/xml/yfiles-z-order/1.0/zOrder"/>
+	<key id="d1" for="node" attr.type="boolean" attr.name="Expanded" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/Expanded">
+		<default>true</default>
+	</key>
+	<key id="d2" for="node" attr.type="string" attr.name="url"/>
+	<key id="d3" for="node" attr.type="string" attr.name="description"/>
+	<key id="d4" for="node" attr.name="NodeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeLabels"/>
+	<key id="d5" for="node" attr.name="NodeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeGeometry"/>
+	<key id="d6" for="all" attr.name="UserTags" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/UserTags"/>
+	<key id="d7" for="node" attr.name="NodeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeStyle"/>
+	<key id="d8" for="node" attr.name="NodeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/NodeViewState"/>
+	<key id="d9" for="edge" attr.type="string" attr.name="url"/>
+	<key id="d10" for="edge" attr.type="string" attr.name="description"/>
+	<key id="d11" for="edge" attr.name="EdgeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeLabels"/>
+	<key id="d12" for="edge" attr.name="EdgeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeGeometry"/>
+	<key id="d13" for="edge" attr.name="EdgeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeStyle"/>
+	<key id="d14" for="edge" attr.name="EdgeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/EdgeViewState"/>
+	<key id="d15" for="port" attr.name="PortLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLabels"/>
+	<key id="d16" for="port" attr.name="PortLocationParameter" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLocationParameter">
+		<default>
+			<x:Static Member="y:FreeNodePortLocationModel.NodeCenterAnchored"/>
+		</default>
+	</key>
+	<key id="d17" for="port" attr.name="PortStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortStyle">
+		<default>
+			<x:Static Member="y:VoidPortStyle.Instance"/>
+		</default>
+	</key>
+	<key id="d18" for="port" attr.name="PortViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/PortViewState"/>
+	<key id="d19" attr.name="SharedData" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/SharedData"/>
+	<data key="d19">
+		<y:SharedData>
+			<sys:String x:Key="1" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0">data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3C!--%20Created%20with%20Inkscape%20(http%3A%2F%2Fwww.inkscape.org%2F)%20--%3E%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fweb.resource.org%2Fcc%2F%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3Asodipodi%3D%22http%3A%2F%2Fsodipodi.sourceforge.net%2FDTD%2Fsodipodi-0.dtd%22%0A%20%20%20xmlns%3Ainkscape%3D%22http%3A%2F%2Fwww.inkscape.org%2Fnamespaces%2Finkscape%22%0A%20%20%20width%3D%2241%22%0A%20%20%20height%3D%2268.997391%22%0A%20%20%20id%3D%22svg2%22%0A%20%20%20sodipodi%3Aversion%3D%220.32%22%0A%20%20%20inkscape%3Aversion%3D%220.45.1%22%0A%20%20%20sodipodi%3Adocbase%3D%22C%3A%5CDaten%5Calberts%5Cprojects%5Cyfx%22%0A%20%20%20sodipodi%3Adocname%3D%22uml_actor.svg%22%0A%20%20%20inkscape%3Aoutput_extension%3D%22org.inkscape.output.svg.inkscape%22%0A%20%20%20version%3D%221.0%22%3E%0A%20%20%3Cdefs%0A%20%20%20%20%20id%3D%22defs4%22%20%2F%3E%0A%20%20%3Csodipodi%3Anamedview%0A%20%20%20%20%20id%3D%22base%22%0A%20%20%20%20%20pagecolor%3D%22%23ffffff%22%0A%20%20%20%20%20bordercolor%3D%22%23666666%22%0A%20%20%20%20%20borderopacity%3D%221.0%22%0A%20%20%20%20%20inkscape%3Apageopacity%3D%220.0%22%0A%20%20%20%20%20inkscape%3Apageshadow%3D%222%22%0A%20%20%20%20%20inkscape%3Azoom%3D%222.934351%22%0A%20%20%20%20%20inkscape%3Acx%3D%22144.21983%22%0A%20%20%20%20%20inkscape%3Acy%3D%2228.533711%22%0A%20%20%20%20%20inkscape%3Adocument-units%3D%22px%22%0A%20%20%20%20%20inkscape%3Acurrent-layer%3D%22layer1%22%0A%20%20%20%20%20showgrid%3D%22true%22%0A%20%20%20%20%20inkscape%3Awindow-width%3D%221280%22%0A%20%20%20%20%20inkscape%3Awindow-height%3D%22968%22%0A%20%20%20%20%20inkscape%3Awindow-x%3D%22-4%22%0A%20%20%20%20%20inkscape%3Awindow-y%3D%22-4%22%0A%20%20%20%20%20width%3D%2248px%22%0A%20%20%20%20%20height%3D%2248px%22%0A%20%20%20%20%20showborder%3D%22false%22%0A%20%20%20%20%20inkscape%3Ashowpageshadow%3D%22false%22%20%2F%3E%0A%20%20%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata7%22%3E%0A%20%20%20%20%3Crdf%3ARDF%3E%0A%20%20%20%20%20%20%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%0A%20%20%20%20%20%20%3C%2Fcc%3AWork%3E%0A%20%20%20%20%3C%2Frdf%3ARDF%3E%0A%20%20%3C%2Fmetadata%3E%0A%20%20%3Cg%0A%20%20%20%20%20inkscape%3Alabel%3D%22Ebene%201%22%0A%20%20%20%20%20inkscape%3Agroupmode%3D%22layer%22%0A%20%20%20%20%20id%3D%22layer1%22%0A%20%20%20%20%20transform%3D%22translate(-29.5%2C-42.959476)%22%3E%0A%20%20%20%20%3Ca%0A%20%20%20%20%20%20%20id%3D%22a3142%22%0A%20%20%20%20%20%20%20transform%3D%22matrix(1.0873906%2C0%2C0%2C1%2C-4.4741999%2C0)%22%3E%0A%20%20%20%20%20%20%3Cpath%0A%20%20%20%20%20%20%20%20%20transform%3D%22translate(11.586889%2C5.2908993)%22%0A%20%20%20%20%20%20%20%20%20d%3D%22M%2047.02914%2047.36993%20A%208.5197716%209.2013531%200%201%201%20%2029.989597%2C47.36993%20A%208.5197716%209.2013531%200%201%201%20%2047.02914%2047.36993%20z%22%0A%20%20%20%20%20%20%20%20%20sodipodi%3Ary%3D%229.2013531%22%0A%20%20%20%20%20%20%20%20%20sodipodi%3Arx%3D%228.5197716%22%0A%20%20%20%20%20%20%20%20%20sodipodi%3Acy%3D%2247.36993%22%0A%20%20%20%20%20%20%20%20%20sodipodi%3Acx%3D%2238.509369%22%0A%20%20%20%20%20%20%20%20%20id%3D%22path2160%22%0A%20%20%20%20%20%20%20%20%20style%3D%22fill%3Anone%3Bfill-rule%3Aevenodd%3Bstroke%3A%23000000%3Bstroke-width%3A1px%3Bstroke-linecap%3Abutt%3Bstroke-linejoin%3Amiter%3Bstroke-opacity%3A1%22%0A%20%20%20%20%20%20%20%20%20sodipodi%3Atype%3D%22arc%22%20%2F%3E%0A%20%20%20%20%3C%2Fa%3E%0A%20%20%20%20%3Cpath%0A%20%20%20%20%20%20%20sodipodi%3Atype%3D%22arc%22%0A%20%20%20%20%20%20%20style%3D%22fill%3Anone%22%0A%20%20%20%20%20%20%20id%3D%22path3134%22%0A%20%20%20%20%20%20%20sodipodi%3Acx%3D%2243.962021%22%0A%20%20%20%20%20%20%20sodipodi%3Acy%3D%2248.392303%22%0A%20%20%20%20%20%20%20sodipodi%3Arx%3D%223.7486994%22%0A%20%20%20%20%20%20%20sodipodi%3Ary%3D%220%22%0A%20%20%20%20%20%20%20d%3D%22M%2047.71072%2048.392303%20A%203.7486994%200%200%201%201%20%2040.213321%2C48.392303%20A%203.7486994%200%200%201%201%20%2047.71072%2048.392303%20z%22%20%2F%3E%0A%20%20%20%20%3Cpath%0A%20%20%20%20%20%20%20style%3D%22fill%3Anone%3Bfill-rule%3Aevenodd%3Bstroke%3A%23000000%3Bstroke-width%3A1.24319649px%3Bstroke-linecap%3Abutt%3Bstroke-linejoin%3Amiter%3Bstroke-opacity%3A1%22%0A%20%20%20%20%20%20%20d%3D%22M%2050%2C61.33709%20C%2050%2C91.363211%2050%2C92.247838%2050%2C92.247838%22%0A%20%20%20%20%20%20%20id%3D%22path3136%22%20%2F%3E%0A%20%20%20%20%3Cpath%0A%20%20%20%20%20%20%20style%3D%22fill%3Anone%3Bfill-rule%3Aevenodd%3Bstroke%3A%23000000%3Bstroke-width%3A1px%3Bstroke-linecap%3Abutt%3Bstroke-linejoin%3Amiter%3Bstroke-opacity%3A1%22%0A%20%20%20%20%20%20%20d%3D%22M%2069.760668%2C72.362183%20C%2069.760668%2C72.362183%2069.760668%2C72.362183%2050.239332%2C72.362183%20C%2030.239332%2C72.362183%2030.239332%2C72.362183%2030.239332%2C72.362183%20L%2030.239332%2C72.362183%22%0A%20%20%20%20%20%20%20id%3D%22path3138%22%20%2F%3E%0A%20%20%20%20%3Cpath%0A%20%20%20%20%20%20%20style%3D%22fill%3Anone%3Bfill-rule%3Aevenodd%3Bstroke%3A%23000000%3Bstroke-width%3A1px%3Bstroke-linecap%3Abutt%3Bstroke-linejoin%3Amiter%3Bstroke-opacity%3A1%22%0A%20%20%20%20%20%20%20d%3D%22M%2030%2C111.45687%20C%2030%2C111.45687%2030%2C111.45687%2050%2C92.013532%20C%2070%2C111.45687%2070%2C111.45687%2070%2C111.45687%22%0A%20%20%20%20%20%20%20id%3D%22path3140%22%20%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A</sys:String>
+			<yjs:SolidColorFill x:Key="2" color="Black"/>
+			<yjs:Stroke x:Key="3" fill="#FF00838F"/>
+			<yjs:SolidColorFill x:Key="4" color="#FF33CCCC"/>
+			<y:FreeNodePortLocationModelParameter x:Key="5" Ratio="0,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="6" Ratio="0.9999999999999996,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="7" Ratio="0.5,1"/>
+			<yjs:Font x:Key="8" fontSize="13" fontFamily="'Arial'"/>
+			<y:FreeNodePortLocationModelParameter x:Key="9" Ratio="1,0.5"/>
+			<yjs:Font x:Key="10" fontSize="13" fontFamily="'Arial'"/>
+			<y:FreeNodePortLocationModelParameter x:Key="11" Ratio="1,0.5"/>
+			<yjs:SolidColorFill x:Key="12" color="#7FCC3333"/>
+			<y:FreeNodePortLocationModelParameter x:Key="13" Ratio="0.5,1"/>
+			<y:FreeNodePortLocationModelParameter x:Key="14" Ratio="0,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="15" Ratio="1,0.5"/>
+			<y:InteriorLabelModel x:Key="16"/>
+			<yjs:SolidColorFill x:Key="17" color="#FFE0E0E0"/>
+			<yjs:Stroke x:Key="18" fill="#FFE0E0E0"/>
+			<yjs:SolidColorFill x:Key="19" color="Black"/>
+			<yjs:Font x:Key="20" fontSize="13" fontFamily="'Arial'"/>
+			<y:CompositeLabelModel x:Key="21">
+				<y:CompositeLabelModel.LabelModels>
+					<y:ExteriorLabelModel Insets="5"/>
+					<y:GraphMLReference ResourceKey="16"/>
+					<y:FreeNodeLabelModel/>
+				</y:CompositeLabelModel.LabelModels>
+			</y:CompositeLabelModel>
+			<yjs:SolidColorFill x:Key="22" color="#FFB0BEC5"/>
+			<yjs:Font x:Key="23" fontSize="13" fontFamily="'Arial'"/>
+			<y:FreeNodeLabelModel x:Key="24"/>
+			<yjs:SolidColorFill x:Key="25" color="Black"/>
+			<yjs:Stroke x:Key="26" fill="#FF00838F"/>
+			<yjs:SolidColorFill x:Key="27" color="#FF33CCCC"/>
+			<yjs:SolidColorFill x:Key="28" color="Black"/>
+			<yjs:Font x:Key="29" fontSize="13" fontFamily="'Arial'"/>
+			<yjs:Stroke x:Key="30" fill="#FF00838F"/>
+			<yjs:SolidColorFill x:Key="31" color="#FF33CCCC"/>
+			<y:FreeNodePortLocationModelParameter x:Key="32" Ratio="0,0.5"/>
+			<yjs:Font x:Key="33" fontSize="13" fontFamily="'Arial'"/>
+			<yjs:Font x:Key="34" fontSize="13" fontFamily="'Arial'"/>
+			<y:FreeNodePortLocationModelParameter x:Key="35" Ratio="1,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="36" Ratio="0,0.25"/>
+			<y:FreeNodePortLocationModelParameter x:Key="37" Ratio="0,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="38" Ratio="0.9999999999999994,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="39" Ratio="0.4999999999999997,1"/>
+			<yjs:DefaultLabelStyle x:Key="40" backgroundFill="{y:GraphMLReference 17}" horizontalTextAlignment="CENTER" backgroundStroke="{y:GraphMLReference 18}" font="{y:GraphMLReference 20}" autoFlip="false" textFill="{y:GraphMLReference 19}" textSize="13"/>
+			<yjs:SolidColorFill x:Key="41" color="Black"/>
+			<yjs:PolylineEdgeStyle x:Key="42" stroke="{y:GraphMLReference 44}" targetArrow="{y:GraphMLReference 45}" sourceArrow="{y:GraphMLReference 46}"/>
+			<yjs:PolylineEdgeStyle x:Key="43" stroke="{y:GraphMLReference 54}"/>
+			<yjs:Stroke x:Key="44" fill="{y:GraphMLReference 41}" miterLimit="1.45">
+				<yjs:Stroke.dashStyle>
+					<yjs:DashStyle dashes="6 2" offset="0"/>
+				</yjs:Stroke.dashStyle>
+			</yjs:Stroke>
+			<yjs:Arrow x:Key="45" type="TRIANGLE" stroke="#FF000000" fill="{y:GraphMLReference 41}" cropLength="1"/>
+			<yjs:Arrow x:Key="46" type="NONE"/>
+			<y:SmartEdgeLabelModel x:Key="47"/>
+			<yjs:DefaultLabelStyle x:Key="48" backgroundFill="{y:GraphMLReference 17}" horizontalTextAlignment="CENTER" backgroundStroke="{y:GraphMLReference 18}" font="{y:GraphMLReference 20}" autoFlip="false" textFill="{y:GraphMLReference 19}" textSize="13"/>
+			<yjs:PolylineEdgeStyle x:Key="49" stroke="{y:GraphMLReference 44}" targetArrow="{y:GraphMLReference 45}" sourceArrow="{y:GraphMLReference 46}"/>
+			<yjs:DefaultLabelStyle x:Key="50" backgroundFill="{y:GraphMLReference 17}" horizontalTextAlignment="CENTER" backgroundStroke="{y:GraphMLReference 18}" font="{y:GraphMLReference 20}" autoFlip="false" textFill="{y:GraphMLReference 19}" textSize="13"/>
+			<yjs:PolylineEdgeStyle x:Key="51" stroke="{y:GraphMLReference 44}" targetArrow="{y:GraphMLReference 45}" sourceArrow="{y:GraphMLReference 46}"/>
+			<yjs:DefaultLabelStyle x:Key="52" backgroundFill="{y:GraphMLReference 17}" horizontalTextAlignment="CENTER" backgroundStroke="{y:GraphMLReference 18}" font="{y:GraphMLReference 20}" autoFlip="false" textFill="{y:GraphMLReference 19}" textSize="13"/>
+			<yjs:PolylineEdgeStyle x:Key="53" stroke="{y:GraphMLReference 44}" targetArrow="{y:GraphMLReference 45}" sourceArrow="{y:GraphMLReference 46}"/>
+			<yjs:Stroke x:Key="54" fill="#FF000000"/>
+			<y:SmartEdgeLabelModel x:Key="55"/>
+		</y:SharedData>
+	</data>
+	<graph id="G" edgedefault="directed">
+		<data key="d6">
+			<y:Json>{"version":"2.0.0","theme":{"name":"light","version":"1.0.0"},"layout":"layout-flowchart","config":{"p_positiveBranchLabel":[],"p_negativeBranchLabel":[],"p_layoutOrientation":1,"p_preferredPositiveBranchDirection":1,"p_preferredNegativeBranchDirection":12,"p_inEdgeGrouping":"optimized","p_allowFlatwiseEdges":true,"p_nodeToNodeDistance":30,"p_minimumEdgeDistance":30,"p_minimumEdgeLength":20,"p_placeNodeLabels":true}}</y:Json>
+		</data>
+		<node id="n0">
+			<data key="d0">0</data>
+			<data key="d4">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 40}">
+						<y:Label.Text>Spieler</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="3.3500000000000227,40.5"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-459.2445072220936" Y="-923.0948412698413" Width="47.7" Height="96"/>
+			</data>
+			<data key="d7">
+				<yjs:ImageNodeStyle image="{y:GraphMLReference 1}"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5" Offset="1.4210854715202004e-14,0"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.49999999999999983,0"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.8333333333333334" Offset="1.4210854715202004e-14,0"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.49999999999999983,1"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5" Offset="1.4210854715202004e-14,0"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.49999999999999983,0"/>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p7">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p8">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p9">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p10">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.75" Offset="-2.842170943040401e-14,0"/>
+				</data>
+			</port>
+			<port name="p11">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5" Offset="1.4210854715202004e-14,0"/>
+				</data>
+			</port>
+			<port name="p12">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="5.958429649979875e-16,0.5"/>
+				</data>
+			</port>
+			<port name="p13">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="5.958429649979875e-16,0.8333333333333334"/>
+				</data>
+			</port>
+			<port name="p14">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.49999999999999983,0"/>
+				</data>
+			</port>
+			<port name="p15">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p16">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5000000000000004,0"/>
+				</data>
+			</port>
+			<port name="p17">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5" Offset="4.263256414560601e-14,0"/>
+				</data>
+			</port>
+			<port name="p18">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.6111111111111107" Offset="4.263256414560601e-14,0"/>
+				</data>
+			</port>
+			<port name="p19">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.7222222222222214" Offset="4.263256414560601e-14,0"/>
+				</data>
+			</port>
+			<port name="p20">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.8333333333333321" Offset="4.263256414560601e-14,0"/>
+				</data>
+			</port>
+			<port name="p21">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.9444444444444429" Offset="4.263256414560601e-14,0"/>
+				</data>
+			</port>
+			<port name="p22">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5000000000000004,1"/>
+				</data>
+			</port>
+		</node>
+		<node id="n1">
+			<data key="d0">19</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text>Exit</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="36.25000000000003,9"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 8}" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-261.5445072220936" Y="-122.5" Width="96.50000000000006" Height="33"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n2">
+			<data key="d0">20</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text>Go</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="39.25000000000003,9"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 10}" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-261.5445072220936" Y="-891.5948412698413" Width="96.50000000000006" Height="33"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n3">
+			<data key="d0">21</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text>Interact</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="26.25000000000003,9"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 23}" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-261.5445072220936" Y="-192.25" Width="96.50000000000006" Height="33"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n4">
+			<data key="d0">22</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text>Search</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="27.25000000000003,9"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="13" fontFamily="'Arial'"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-261.5445072220936" Y="-343.50079365079364" Width="96.50000000000006" Height="33"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n5">
+			<data key="d0">23</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text>Take</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="34.25000000000003,9"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="13" fontFamily="'Arial'"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-261.5445072220936" Y="-731.5007936507936" Width="96.50000000000006" Height="33"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.9999999999999997,0.5"/>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n6">
+			<data key="d0">24</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text>Drop</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="34.25000000000003,9"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="13" fontFamily="'Arial'"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-261.5445072220936" Y="-1036.0948412698413" Width="96.50000000000006" Height="33"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n7">
+			<data key="d0">25</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Spiel beenden]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="6.75,9"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 8}" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-86.79450722209356" Y="-122.5" Width="96.50000000000006" Height="33"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="9"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.9999999999999997,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n8">
+			<data key="d0">26</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text>speichern</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="19.75,9"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 8}" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="126.20549277790644" Y="-122.5" Width="96.50000000000006" Height="33"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 12}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="9"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="15"/>
+				</data>
+			</port>
+			<port name="p7">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="2.9452548632542994e-16,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n9">
+			<data key="d0">27</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[durch Tür gehen]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="1.25,9"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 10}" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-86.79450722209356" Y="-891.5948412698413" Width="96.50000000000006" Height="33"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.9999999999999997,0.5"/>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0"/>
+				</data>
+			</port>
+			<port name="p7">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n10">
+			<data key="d0">28</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Tür auswählen]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="6.25,9"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 10}" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-86.79450722209356" Y="-798.0007936507936" Width="96.50000000000006" Height="33"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0"/>
+				</data>
+			</port>
+		</node>
+		<node id="n11">
+			<data key="d0">29</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[neuen Raum betreten]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="3,9"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" wrapping="WORD" font="{y:GraphMLReference 10}" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-104.04450722209356" Y="-969.5948412698413" Width="131" Height="33"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+		</node>
+		<node id="n12">
+			<data key="d0">30</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Tür aufschließen]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="4.75,6"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 8}" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="121.20549277790644" Y="-888.5948412698413" Width="106.50000000000006" Height="27"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 12}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="9"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="15"/>
+				</data>
+			</port>
+			<port name="p7">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="35"/>
+				</data>
+			</port>
+			<port name="p8">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="2.6687051108360556e-16,0.5"/>
+				</data>
+			</port>
+			<port name="p9">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.9999999999999998,0.5"/>
+				</data>
+			</port>
+			<port name="p10">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="36"/>
+				</data>
+			</port>
+			<port name="p11">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.9999999999999998,0.8333333333333334"/>
+				</data>
+			</port>
+			<port name="p12">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+		</node>
+		<node id="n13">
+			<data key="d0">31</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Eintrittsbed.:
+Tür ist geschlössen]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:CompositeLabelModelParameter Model="{y:GraphMLReference 21}">
+								<y:CompositeLabelModelParameter.Parameter>
+									<y:InteriorLabelModelParameter Position="Center" Model="{y:GraphMLReference 16}"/>
+								</y:CompositeLabelModelParameter.Parameter>
+							</y:CompositeLabelModelParameter>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle backgroundFill="{y:GraphMLReference 17}" horizontalTextAlignment="CENTER" backgroundStroke="{y:GraphMLReference 18}" font="{y:GraphMLReference 20}" autoFlip="false" textFill="{y:GraphMLReference 19}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="370.28311869928234" Y="-906.8917162698413" Width="145" Height="63.59375"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNoteStyle fill="{y:GraphMLReference 22}" stroke="BLACK"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n14">
+			<data key="d0">32</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Austrittsbed.:
+Spieler besitzt Schlüssel]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:CompositeLabelModelParameter Model="{y:GraphMLReference 21}">
+								<y:CompositeLabelModelParameter.Parameter>
+									<y:InteriorLabelModelParameter Position="Center" Model="{y:GraphMLReference 16}"/>
+								</y:CompositeLabelModelParameter.Parameter>
+							</y:CompositeLabelModelParameter>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle backgroundFill="{y:GraphMLReference 17}" horizontalTextAlignment="CENTER" backgroundStroke="{y:GraphMLReference 18}" autoFlip="false" textFill="{y:GraphMLReference 19}" textSize="13">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="13" fontFamily="'Arial'"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="355.95549277790644" Y="-813.2976686507936" Width="173.6552518427518" Height="63.59375"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNoteStyle fill="{y:GraphMLReference 22}" stroke="BLACK"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="3.920235783504001e-16,0.25"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="3.920235783504001e-16,0.75"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n15">
+			<data key="d0">33</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[mit Item/NPC im 
+Raum interagieren]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="8.575768893005261,5.75"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 23}" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-100.12027611509882" Y="-199" Width="123.15153778601046" Height="46.5"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0"/>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5" Offset="2.842170943040401e-14,0"/>
+				</data>
+			</port>
+		</node>
+		<node id="n16">
+			<data key="d0">34</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[mit Item interagieren]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="2.075768893005261,9"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 23}" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-100.12027611509882" Y="-277.00079365079364" Width="123.15153778601046" Height="33"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="2.9452548632542994e-16,0.5"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+		</node>
+		<node id="n17">
+			<data key="d0">35</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[mit NPC interagieren]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:CompositeLabelModelParameter>
+								<y:CompositeLabelModelParameter.Parameter>
+									<y:RatioAnchoredLabelModelParameter LayoutOffset="4.849455932317255,13.19079861111112" Model="{y:GraphMLReference 24}"/>
+								</y:CompositeLabelModelParameter.Parameter>
+								<y:CompositeLabelModelParameter.Model>
+									<y:CompositeLabelModel>
+										<y:CompositeLabelModel.LabelModels>
+											<y:ExteriorLabelModel Insets="5"/>
+											<y:InteriorLabelModel/>
+											<y:GraphMLReference ResourceKey="24"/>
+										</y:CompositeLabelModel.LabelModels>
+									</y:CompositeLabelModel>
+								</y:CompositeLabelModelParameter.Model>
+							</y:CompositeLabelModelParameter>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle backgroundFill="#00E0E0E0" horizontalTextAlignment="CENTER" backgroundStroke="#00E0E0E0" font="{y:GraphMLReference 20}" autoFlip="false" textFill="{y:GraphMLReference 19}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="109.10603684558919" Y="-196.44079861111112" Width="130.69891186463445" Height="41.38159722222224"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 12}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5" Offset="-2.842170943040401e-14,0"/>
+				</data>
+			</port>
+		</node>
+		<node id="n18">
+			<data key="d0">37</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Items finden]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="8,12.5"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" autoFlip="false" textFill="#FF000000" textSize="13">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="13" fontFamily="'Arial'"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-82.04450722209356" Y="-491.00079365079364" Width="87" Height="40"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="#FF00838F" fill="#FF33CCCC" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+		</node>
+		<node id="n19">
+			<data key="d0">38</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Türen finden]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="11.5,12.5"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" autoFlip="false" textFill="#FF000000" textSize="13">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="13" fontFamily="'Arial'"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="127.45549277790644" Y="-347.00079365079364" Width="94" Height="40"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="#FF00838F" fill="#FF33CCCC" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n20">
+			<data key="d0">39</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Raum durchsuchen]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="10,12.5"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13">
+								<yjs:DefaultLabelStyle.font>
+									<yjs:Font fontSize="13" fontFamily="'Arial'"/>
+								</yjs:DefaultLabelStyle.font>
+							</yjs:DefaultLabelStyle>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-105.04450722209356" Y="-347.00079365079364" Width="133" Height="40"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 4}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n21">
+			<data key="d0">40</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Items mitnehmen]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="10,12.5"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 29}" autoFlip="false" textFill="{y:GraphMLReference 28}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-99.04450722209356" Y="-735.0007936507936" Width="121" Height="40"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 30}" fill="{y:GraphMLReference 31}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="32"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+		</node>
+		<node id="n22">
+			<data key="d0">41</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Item verschwindet aus Raum]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="8,12.5"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 33}" autoFlip="false" textFill="{y:GraphMLReference 25}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-130.04450722209356" Y="-591.0007936507936" Width="183" Height="40"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 26}" fill="{y:GraphMLReference 27}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0"/>
+				</data>
+			</port>
+		</node>
+		<node id="n23">
+			<data key="d0">42</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Item erscheint in Inventar]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="19,12.5"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 34}" autoFlip="false" textFill="{y:GraphMLReference 25}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="82.95549277790644" Y="-735.0007936507936" Width="183" Height="40"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 26}" fill="{y:GraphMLReference 27}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n24">
+			<data key="d0">43</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Items fallen lassen]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="6,12.5"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 29}" autoFlip="false" textFill="{y:GraphMLReference 28}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-99.04450722209356" Y="-1039.5948412698413" Width="121" Height="40"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 30}" fill="{y:GraphMLReference 31}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="32"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.1666666666666657"/>
+				</data>
+			</port>
+		</node>
+		<node id="n25">
+			<data key="d0">44</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Item verschwindet aus Inventar]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="3,12.5"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 33}" autoFlip="false" textFill="{y:GraphMLReference 25}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-130.04450722209356" Y="-1183.5948412698413" Width="183" Height="40"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 26}" fill="{y:GraphMLReference 27}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+		</node>
+		<node id="n26">
+			<data key="d0">45</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Item erscheint in Raum]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="24,12.5"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 34}" autoFlip="false" textFill="{y:GraphMLReference 25}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="82.95549277790644" Y="-1039.5948412698413" Width="183" Height="40"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 26}" fill="{y:GraphMLReference 27}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n27">
+			<data key="d0">46</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text>use</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="42.25000000000003,6"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 8}" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="-266.5445072220936" Y="-534.5007936507936" Width="106.50000000000006" Height="27"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 12}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="9"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="15"/>
+				</data>
+			</port>
+			<port name="p7">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="35"/>
+				</data>
+			</port>
+			<port name="p8">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="37"/>
+				</data>
+			</port>
+			<port name="p9">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="38"/>
+				</data>
+			</port>
+			<port name="p10">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="36"/>
+				</data>
+			</port>
+			<port name="p11">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="39"/>
+				</data>
+			</port>
+			<port name="p12">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+				</data>
+			</port>
+			<port name="p13">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p14">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n28">
+			<data key="d0">47</data>
+			<data key="d4">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[Item aus 
+Inventar benutzen]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="8.701514444187183,4.25"/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 8}" autoFlip="false" textFill="{y:GraphMLReference 2}" textSize="13"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="114.75397833371926" Y="-542.7507936507936" Width="119.40302888837437" Height="43.5"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 3}" fill="{y:GraphMLReference 12}" shape="ROUND_RECTANGLE"/>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="9"/>
+				</data>
+			</port>
+			<port name="p4">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+			</port>
+			<port name="p5">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+			</port>
+			<port name="p6">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="15"/>
+				</data>
+			</port>
+			<port name="p7">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="35"/>
+				</data>
+			</port>
+			<port name="p8">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="37"/>
+				</data>
+			</port>
+			<port name="p9">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="38"/>
+				</data>
+			</port>
+			<port name="p10">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="36"/>
+				</data>
+			</port>
+			<port name="p11">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="39"/>
+				</data>
+			</port>
+			<port name="p12">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,1"/>
+				</data>
+			</port>
+			<port name="p13">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p14">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0,0.5"/>
+				</data>
+			</port>
+			<port name="p15">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0"/>
+				</data>
+			</port>
+		</node>
+		<edge id="e0" source="n1" target="n7" sourceport="p4" targetport="p4">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e1" source="n7" target="n8" sourceport="p6" targetport="p7">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 40}">
+						<y:Label.Text>&lt;&lt;include&gt;&gt;</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:FreeEdgeLabelModelParameter Ratio="0.3605150214592275" Distance="-9.500000000000014" Angle="2.4492935982947064e-16"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="42"/>
+			</data>
+		</edge>
+		<edge id="e2" source="n9" target="n10" sourceport="p4" targetport="p4">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 40}">
+						<y:Label.Text>&lt;&lt;include&gt;&gt;</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:FreeEdgeLabelModelParameter Distance="39" Angle="2.4492935982947064e-16"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="42"/>
+			</data>
+		</edge>
+		<edge id="e3" source="n9" target="n12" sourceport="p5" targetport="p8">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 40}">
+						<y:Label.Text>&lt;&lt;extend&gt;&gt;</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:FreeEdgeLabelModelParameter Ratio="0.36771300448430494" Distance="-9.5" Angle="2.4492935982947064e-16"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="42"/>
+			</data>
+		</edge>
+		<edge id="e4" source="n9" target="n11" sourceport="p6" targetport="p4">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 40}">
+						<y:Label.Text>&lt;&lt;include&gt;&gt;</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:FreeEdgeLabelModelParameter Distance="39" Angle="2.4492935982947064e-16"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="42"/>
+			</data>
+		</edge>
+		<edge id="e5" source="n2" target="n9" sourceport="p4" targetport="p7">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e6" source="n12" target="n13" sourceport="p9" targetport="p2">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e7" source="n12" target="n14" sourceport="p11" targetport="p5">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="325.95549277790644,-866.0948412698413"/>
+					<y:Bend Location="325.95549277790644,-781.5007936507936"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e8" source="n3" target="n15" sourceport="p4" targetport="p4">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e9" source="n15" target="n16" sourceport="p5" targetport="p5">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 40}">
+						<y:Label.Text>&lt;&lt;include&gt;&gt;</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:FreeEdgeLabelModelParameter Distance="38.99999999999999" Angle="2.4492935982947064e-16"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="42"/>
+			</data>
+		</edge>
+		<edge id="e10" source="n15" target="n17" sourceport="p6" targetport="p0">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 40}">
+						<y:Label.Text>&lt;&lt;include&gt;&gt;</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 55}" SegmentRatio="0.48610948793125586" Distance="-1.9999999999999858"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="42"/>
+			</data>
+		</edge>
+		<edge id="e11" source="n20" target="n19" sourceport="p1" targetport="p0">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 48}">
+						<y:Label.Text>&lt;&lt;include&gt;&gt;</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 47}" SegmentRatio="0" Distance="-2"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="49"/>
+			</data>
+		</edge>
+		<edge id="e12" source="n20" target="n18" sourceport="p2" targetport="p0">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 48}">
+						<y:Label.Text>&lt;&lt;include&gt;&gt;</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 47}" SegmentRatio="0" Distance="-2"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="49"/>
+			</data>
+		</edge>
+		<edge id="e13" source="n4" target="n20" sourceport="p4" targetport="p3">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e14" source="n21" target="n22" sourceport="p1" targetport="p0">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 50}">
+						<y:Label.Text>&lt;&lt;include&gt;&gt;</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 47}" SegmentRatio="0" Distance="2"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="51"/>
+			</data>
+		</edge>
+		<edge id="e15" source="n21" target="n23" sourceport="p2" targetport="p0">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 50}">
+						<y:Label.Text>&lt;&lt;include&gt;&gt;</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 47}" Location="FromTarget" SegmentRatio="-2" Distance="-2"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="51"/>
+			</data>
+		</edge>
+		<edge id="e16" source="n5" target="n21" sourceport="p4" targetport="p3">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e17" source="n24" target="n25" sourceport="p1" targetport="p0">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 52}">
+						<y:Label.Text>&lt;&lt;include&gt;&gt;</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 47}" SegmentRatio="0" Distance="-2"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="53"/>
+			</data>
+		</edge>
+		<edge id="e18" source="n24" target="n26" sourceport="p2" targetport="p0">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 52}">
+						<y:Label.Text>&lt;&lt;include&gt;&gt;</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 47}" Location="FromTarget" SegmentRatio="-2" Distance="2"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="53"/>
+			</data>
+		</edge>
+		<edge id="e19" source="n6" target="n24" sourceport="p4" targetport="p3">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 54}"/>
+			</data>
+		</edge>
+		<edge id="e20" source="n27" target="n28" sourceport="p12" targetport="p14">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e21" source="n0" target="n6" sourceport="p16" targetport="p5">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-435.3945072220936,-1019.5948412698413"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e22" source="n0" target="n2" sourceport="p17" targetport="p5">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e23" source="n0" target="n5" sourceport="p18" targetport="p6">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-291.5445072220936,-864.4281746031746"/>
+					<y:Bend Location="-291.5445072220936,-715.0007936507936"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e24" source="n0" target="n27" sourceport="p19" targetport="p14">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-321.5445072220936,-853.761507936508"/>
+					<y:Bend Location="-321.5445072220936,-521.0007936507936"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e25" source="n0" target="n4" sourceport="p20" targetport="p5">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-351.5445072220936,-843.0948412698414"/>
+					<y:Bend Location="-351.5445072220936,-327.00079365079364"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e26" source="n0" target="n3" sourceport="p21" targetport="p5">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-381.5445072220936,-832.4281746031747"/>
+					<y:Bend Location="-381.5445072220936,-175.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e27" source="n0" target="n1" sourceport="p22" targetport="p5">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-435.3945072220936,-106"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="43"/>
+			</data>
+		</edge>
+		<edge id="e28" source="n12" target="n28" sourceport="p12" targetport="p15">
+			<data key="d11">
+				<x:List>
+					<y:Label Style="{y:GraphMLReference 40}">
+						<y:Label.Text>&lt;&lt;include&gt;&gt;</y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 55}" Distance="5"/>
+						</y:Label.LayoutParameter>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="174.45549277790644,-798.2978174603174"/>
+					<y:Bend Location="295.95549277790644,-798.2978174603174"/>
+					<y:Bend Location="295.95549277790644,-665.0007936507936"/>
+					<y:Bend Location="174.45549277790644,-665.0007936507936"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="42"/>
+			</data>
+		</edge>
+	</graph>
+</graphml>

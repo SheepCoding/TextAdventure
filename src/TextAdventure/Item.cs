@@ -17,6 +17,7 @@ namespace TextAdventure
         protected bool Open;
         protected bool Secret;
         protected bool Fix;
+        protected string Typ;
 
         public Item(int id, string name, string description, string interactText, string packText)
         {
@@ -29,6 +30,7 @@ namespace TextAdventure
             Open = true;
             Secret = false;
             Fix = true;
+            Typ = "";
         }
 
         public int GetId()
@@ -59,6 +61,11 @@ namespace TextAdventure
         public int GetMaxNumber()
         {
             return MaxNumber;
+        }
+
+        public string GetTyp()
+        {
+            return Typ;
         }
 
         public void SetSecret(bool secret)

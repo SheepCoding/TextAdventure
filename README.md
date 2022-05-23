@@ -13,7 +13,8 @@ Features (die bis jetzt funktionieren):
 - Raum durchsuchen (geheime Items und Türen finden)
 - Items einpacken (ins Inventar des Spielers)
 - Items fallenlassen (aus Inventar des Spielers)
-- Items benutzen --> Es wird nur ein Text angeszeigt.
+- mit Items im Raum interagieren --> Es wird nur ein Text angeszeigt.
+- Items aus Inventar benutzen --> Bis jetzt funktioniert nur Türen aufschließen.
 
 Im Master-Branch befindet suich eine spielbare Version.
 Alle Daten werden aus einer MySQL-Datenbank geladen. Das Skript zum Anlegen dieser Datenbank befindet sich im Data-Ordner.
