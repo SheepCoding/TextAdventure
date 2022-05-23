@@ -285,7 +285,6 @@ namespace TextAdventure
             reader.Close();
         }
 
-        //ToDo: Fehler beim Items laden
         /* läd alle LootItems aus Datenbank
         */
         private void LoadLootItem(MySqlConnection connection)
